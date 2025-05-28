@@ -1,4 +1,3 @@
-import type { Grid } from './Grid'
 import type { HTMLCellElement } from './HTMLCellElement'
 import type { Position } from './Position'
 
@@ -33,9 +32,9 @@ export class Cell {
     )
   }
 
-  attachClickListener (grid: Grid): void {
+  attachClickListener (gameStopped: boolean): void {
     this._element.addEventListener('click', () => {
-      if (grid.stopped) return
+      if (gameStopped) return
 
       this._alive = !this._alive
       this._nextAlive = this._alive

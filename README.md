@@ -1,24 +1,38 @@
-🌱 Conceptos Básicos
-Tablero: Es una rejilla bidimensional (como una matriz) de celdas.
+# 🌍 Jhon Conway's Life Game
 
-Celdas: Cada celda tiene dos estados posibles:
+This is an small page made with TypeScript and Vite of the **Jhon Conway's Life Game**.
 
-Viva (1)
+## 🌱 Basic Concepts
+**Board:** A two-dimensional grid (like a matrix) of cells.
+**Cells:** Each cell has two possible states: Alive or Dead
+**Neighborhood:** Each cell has 8 neighbors — the surrounding cells in all directions, including diagonals.
 
-Muerta (0)
+## 🔄 Game Rules
+At each generation (a step in time), the following rules are applied to every cell:
 
-Vecindad: Cada celda tiene 8 vecinos (las celdas que la rodean en todas las direcciones, incluso en diagonal).
+**Survival:**
+A living cell with 2 or 3 living neighbors stays alive.
 
-🔄 Reglas del Juego
-Para cada generación (es decir, cada paso de tiempo), las reglas aplicadas a cada celda son:
+**Death (underpopulation or overpopulation):**
+A living cell with fewer than 2 or more than 3 neighbors dies.
 
-Supervivencia:
-Una celda viva con 2 o 3 vecinos vivos sigue viva.
+**Birth:**
+A dead cell with exactly 3 living neighbors becomes alive.
 
-Muerte por aislamiento o sobrepoblación:
-Una celda viva con menos de 2 o más de 3 vecinos vivos muere.
+These rules are applied simultaneously to every cell, producing a new generation of the board.
 
-Nacimiento:
-Una celda muerta con exactamente 3 vecinos vivos cobra vida.
+## 🚀 Features
 
-Estas reglas se aplican simultáneamente a todas las celdas, generando una nueva generación del tablero.
+✅ Change cells colors
+✅ Change speed
+✅ Reset board
+✅ Pause/resume game
+
+## 🛠️ Built With
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vite.dev/)
+
+## Contact
+
+You can contact me by my email: ezetorc@gmail.com

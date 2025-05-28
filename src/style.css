@@ -25,10 +25,12 @@ body {
   min-height: 100vh;
 }
 
-#grid {
+#life-game {
   width: 750px;
   aspect-ratio: 1 / 1;
   box-sizing: content-box;
+  border: 2px #000 solid;
+  overflow: hidden;
   display: grid;
   grid-template-columns: repeat(30, 25px);
   grid-template-rows: repeat(30, 25px);

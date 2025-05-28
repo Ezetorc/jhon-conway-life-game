@@ -9,8 +9,16 @@
 </head>
 
 <body>
-  <div id="grid"></div>
-  <input id="speed-input" type="range" min="1" max="5">
+  <div id="life-game"></div>
+  <div>
+    <input id="speed-input" type="range" min="1" max="5">
+    <input checked="true" id="game-controller-input" type="checkbox">
+    <button id="game-reseter-button">Reset</button>
+  </div>
+  <div>
+    <input id="alive-color-input" type="color">
+    <input id="dead-color-input" type="color">
+  </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
 
